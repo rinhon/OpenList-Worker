@@ -65,7 +65,7 @@
     "JWT_SECRET": "qKzCUp6yFhdz5PcB9PoeW02DMpkwzZpT",
     //
     // 跳过安装向导，自动以该密码初始化 admin
-    // "ADMIN_PASS": "",
+    "ADMIN_PASS": "ijnqwe8080.",
     //
     // CORS 白名单（逗号分隔，不设则仅同源）
     "ALLOW_URLS": "https://netdisk.rinhon.cc",
@@ -150,4 +150,18 @@
   // ▶ 方案 D：Blob / MySQL
   //   Blob 由 EdgeOne / ESA 自动注入，无需配置；
   //   MySQL 通过 Secret 配置 MYSQL_URLS（或 MYSQL_HOST 等分项）。
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true
+    }
+  },
+
 }
